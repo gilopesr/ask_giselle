@@ -9,27 +9,26 @@ body{
     position: relative;
 }
 
-    .container {
+.container {
         text-align: center;
         display: flex;
         flex-direction: column;
+}
 
-    }
+p{
+    margin: 0%;
+    font-weight: bold;a
+}
 
-    p{
-            margin: 0%;
-            font-weight: bold;
-    }
-
-    input[type=text]{
-        background-color: #FFF;
-        border: none;
-        border-radius: 30px;
-        padding: 10px 20px;
-        margin: 10px;
-        font-size: 16px;
-        cursor:text;
-    }
+input[type=text]{
+    background-color: #FFF;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor:text;
+}
 
 .btn {
     background-color: #9c5858;
@@ -41,14 +40,11 @@ body{
     cursor:pointer;
     color: #FFD1DC;
     font-weight: bold;
-        
-
 }
 
-    .giselle{
-        text-align:center;
-    
-    }
+.giselle{
+    text-align:center;
+}
 
 @media screen {
     @media (min-width: 320px) and (max-width: 430px) {
