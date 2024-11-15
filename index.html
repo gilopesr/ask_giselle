@@ -12,24 +12,26 @@
 <body>
     <form>
         <div class="container">
-            <p>insira duas opções abaixo para giselle escolher uma:</p>
-            <label  for="opcao1"></label>
-            <input  type="text" name = "opcao1" id="opcao1" placeholder="Opção 1.."/>
+            <p>Insira duas opções abaixo para Giselle escolher uma:</p>
+            <label for="opcao1"></label>
+            <input type="text" name="opcao1" id="opcao1" placeholder="Opção 1.." />
         
             <p>VS.</p>
             <label for="opcao2"></label>
-            <input type="text" name = "opcao2" id="opcao2" placeholder="Opção 2.." />
+            <input type="text" name="opcao2" id="opcao2" placeholder="Opção 2.." />
 
+            <input type="button" value="Me Ajude a Escolher!" onclick="escolher()" class="btn"/>
 
-            <input type="button" value= "Me Ajude a Escolher!" onclick="escolher()" class="btn"/>
+            <img alt="Giselle" class="giselle" height="200" src="img/e3661607deb9dd9b71bf0842f8b5d07b-removebg-preview.png" width="450"/>
         </div>
         
-
-        
-        <img alt="giselle" class="giselle" height="200" src="img/e3661607deb9dd9b71bf0842f8b5d07b-removebg-preview.png" width="450"/>
-        
-
+        <div class="janela" id="janela" style="display:none;">
+            <div class="modal">
+                <button class="fechar" id="fechar">x</button>
+                <div id="mensagemErro" class="erro" style="display: none;"></div>
+                <p id="resultadoEscolha"></p>
+            </div>
+        </div>
     </form>
-
 </body>
 </html>
