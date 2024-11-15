@@ -7,12 +7,32 @@ function escolher() {
             
     
         let indiceAleatorio = Math.floor(Math.random() * opcoes.length);
-        let escolhida = opcoes[indiceAleatorio];
+        let escolha = opcoes[indiceAleatorio];
     
-        alert(escolhida);
-    }else{
-        alert('é obrigatorio ter duas opções!')
-    }        
-    
-   
-}
+                
+                document.getElementById("resultadoEscolha").innerText = "Giselle escolheu: " + escolha;
+
+                
+                document.getElementById("mensagemErro").style.display = "none";
+        
+                
+                document.getElementById("janela").style.display = "block";
+            } else {
+                
+                document.getElementById("mensagemErro").innerText = "Por favor, insira as duas opções!";
+                document.getElementById("mensagemErro").style.display = "block";
+        
+                
+                document.getElementById("janela").style.display = "block";
+            }
+        }
+        
+        const modal = document.getElementById('janela');
+        modal.classList.add('abrir');
+        
+        modal.addEventListener('click', (e) => {
+            if (e.target.id == 'fechar' || e.target.id == 'janela') {
+                modal.classList.remove('abrir');
+                document.getElementById("janela").style.display = "none";  
+            }
+        });
