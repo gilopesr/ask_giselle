@@ -13,6 +13,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    max-width: 600px;
 }
 
 p {
@@ -29,6 +30,7 @@ input[type=text] {
     margin: 10px;
     font-size: 16px;
     cursor: text;
+    max-width: 450px;
 }
 
 .btn {
@@ -41,6 +43,7 @@ input[type=text] {
     cursor: pointer;
     color: #FFD1DC;
     font-weight: bold;
+    max-width: 450px;
 }
 
 .btn:hover{
@@ -110,6 +113,7 @@ input[type=text] {
 @media (max-width: 768px) {
     body {
         height: auto; 
+        padding: 10px;
     }
 
     .container {
@@ -127,23 +131,19 @@ input[type=text] {
     input[type="text"], .btn {
         font-size: 14px; 
         padding: 8px 16px;
-        width: 90%;
-        max-width: 350px;
-    }
-
-    .btn {
-        font-size: 14px;
+        width: 100%; 
+        max-width: 400px; 
     }
 
     .modal {
-        width: 90%;
+        width: 80%; 
         max-width: 450px;
         padding: 20px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .fechar {
-        font-size: 18px; 
+        font-size: 18px;
     }
 }
 
@@ -163,24 +163,21 @@ input[type=text] {
     }
 
     input[type="text"], .btn {
-        font-size: 14px;
+        font-size: 12px; 
         padding: 6px 12px;
         width: 100%; 
-    }
-
-    .btn {
-        font-size: 16px;
+        max-width: 350px; 
     }
 
     .modal {
-        width: 95%;
-        max-width: 400px;
+        width: 90%; 
+        max-width: 380px; 
         padding: 15px;
-        font-size: 16px;
+        font-size: 16px; 
     }
 
     .fechar {
-        font-size: 16px; 
+        font-size: 16px;
     }
 }
 
@@ -192,7 +189,6 @@ input[type=text] {
 
     .modal {
         width: 33%;
-        max-width: 450px;
         padding: 50px;
         font-size: 24px;
     }
